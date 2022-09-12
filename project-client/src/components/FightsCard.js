@@ -61,6 +61,25 @@ function FightsCard({ fight, setClicked }) {
       })
   }
 
+
+  //DELETE FIGHT
+
+  function handleClick() {
+    fetch(`http://localhost:9292/fight/${fight.id}`, {
+        method:'Delete',
+        headers: {
+          'Content-Type' : 'application/json'
+        },
+      })
+      .then(res => res.json())
+      .then(data => {
+        console.log(data)
+        setRed(initialObj)
+        // setRed(initialObj)
+        setClicked(prev => !prev)
+      })
+  }
+
   return (
     <div className="fightersCard">
       <div className="eachFighter">
@@ -85,6 +104,7 @@ function FightsCard({ fight, setClicked }) {
         </div>
       </div>
       <div className="details">
+        <button onClick={handleClick} className="deleteBtn">DELETE</button>
         <h1>UFC {getRandomInt(300)}</h1>
         <div className="info">
           <div>
@@ -94,6 +114,7 @@ function FightsCard({ fight, setClicked }) {
             <p className="writing">{fight.blue_fighter.height}</p>
           </div>
           <div className="attr">
+
             <p className="middle">AGE</p>
             <p className="middle">HEIGHT</p>
             <p className="middle">WEIGHT</p>

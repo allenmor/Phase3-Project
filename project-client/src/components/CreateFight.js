@@ -2,7 +2,7 @@ import React from "react";
 import "./CreateFight.css";
 import { useState, useEffect } from "react";
 
-function CreateFighter() {
+function CreateFighter({setClicked}) {
   let initalFighterObj = {
     name: "",
     age: "",
@@ -71,6 +71,7 @@ function CreateFighter() {
       console.log(data)
       setBlue(initalFighterObj)
       setRed(initalFighterObj)
+      setClicked(prev => !prev)
     })
 
   }

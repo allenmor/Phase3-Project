@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route path='/' element={<FrontPage />} />
         <Route path='/fights' element={<Fights setClicked={setClicked} fights={fights}/>} />
-        <Route path='/createfighter' element={<CreateFight />} />
+        <Route path='/createfighter' element={<CreateFight setClicked={setClicked}/>} />
       </Routes>
     </>
   );

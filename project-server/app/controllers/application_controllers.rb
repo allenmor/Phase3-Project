@@ -65,5 +65,11 @@ class ApplicationController < Sinatra::Base
         red.to_json
       end
 
+      delete '/fight/:id' do
+        fight = Fight.find(params[:id])
+        fight.destroy
+        fight.to_json
+      end
+
 
 end
