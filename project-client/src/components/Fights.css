@@ -1,61 +1,137 @@
-.stadiumContainer {
-    margin: 5rem auto;
-    width: 95vw;
-    align-items: flex-end;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-  }
-  
-  .eachStadium {
-    display: flex;
-    flex-direction: column;
-    border: 2px black;
-  
-    margin: 0.1rem;
-  }
-  .card{
-      width: 38vh; 
-  }
-  .img-wrap{
-      width: 50%;
-      height: 15rem;
-  
-  }
-  .inline{
-      display: inline-block;
-  }
-  .stadiumImage {
-  object-fit: cover;
-  height: 100%;
-  margin: 0.5em;
-  }
-  .stadiumInfo {
-    display: flex;
-    align-items: center;
-    font-family: sans-serif;
-    justify-content: space-around;
-  }
-  
-  img {
-      width: 100%;
-  }
 
 
   /* Testing css */
 
-  .fighterBox {
-      border: 3px black;
-      display: flex;
-      width: 50%;
-      
+  .fightersCard {
+      border: 3px solid;
+      display: grid;
+      width: 95% ;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      margin: 1vh;
   }
 
+  .details {
+      background-color: black;
+      width: 100%;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
   .fighterPic {
       width: 50%;
       display: flex;
   }
   .fighterPics {
       display: flex;
+  }
+
+
+/* UFC LETTER  */
+  
+  h1 {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    z-index: 2;
+    font-size: 5em;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    color: yellow;
+    text-shadow: 1px 1px hsl(50, 50%, 45%),
+                 2px 2px hsl(50, 50%, 40%),
+                 3px 3px hsl(50, 50%, 35%),
+                 4px 4px hsl(50, 50%, 34%),
+                 5px 5px hsl(50, 50%, 33%),
+                 6px 6px hsl(50, 50%, 32%),
+                 7px 7px hsl(50, 50%, 31%),
+                 8px 8px hsl(50, 50%, 30%),
+                 9px 9px hsl(50, 50%, 29%),
+                 10px 10px hsl(50, 50%, 28%),
+                 10px 10px 30px rgba(0,0,0,.7),
+  }
+  .info {
+    display: grid;
+    width: 95% ;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+
+  h2 {
+    position: relative;
+    z-index: 2;
+    font-size: 1em;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    color: rgb(16, 16, 15);
+    text-shadow: 1px 1px hsl(50, 50%, 45%),
+                 2px 2px hsl(50, 50%, 40%),
+                 3px 3px hsl(50, 50%, 35%),
+                 4px 4px hsl(50, 50%, 34%),
+                 5px 5px hsl(50, 50%, 33%),
+                 6px 6px hsl(50, 50%, 32%),
+                 7px 7px hsl(50, 50%, 31%),
+                 8px 8px hsl(50, 50%, 30%),
+                 9px 9px hsl(50, 50%, 29%),
+                 10px 10px hsl(50, 50%, 28%),
+                 10px 10px 30px rgba(0,0,0,.7),
+  }
+
+  p {
+    position: relative;
+    z-index: 2;
+    font-size: 2em;
+    letter-spacing: 15px;
+    margin-bottom: 1.5vh;
+    text-transform: uppercase;
+    color: rgb(255, 255, 254);
+    text-shadow: 1px 1px hsl(50, 50%, 45%),
+                 2px 2px hsl(50, 50%, 40%),
+                 3px 3px hsl(50, 50%, 35%),
+                 4px 4px hsl(50, 50%, 34%),
+                 5px 5px hsl(50, 50%, 33%),
+                 6px 6px hsl(50, 50%, 32%),
+                 7px 7px hsl(50, 50%, 31%),
+                 8px 8px hsl(50, 50%, 30%),
+                 9px 9px hsl(50, 50%, 29%),
+                 10px 10px hsl(50, 50%, 28%),
+                 10px 10px 30px rgba(0,0,0,.7),
+  }
+
+  .middle {
+    position: relative;
+    z-index: 2;
+    font-size: 2em;
+    letter-spacing: 15px;
+    margin-bottom: 1.5vh;
+    text-transform: uppercase;
+    color: rgb(102, 102, 98);
+    text-shadow: 1px 1px hsl(50, 50%, 45%),
+                 2px 2px hsl(50, 50%, 40%),
+                 3px 3px hsl(50, 50%, 35%),
+                 4px 4px hsl(50, 50%, 34%),
+                 5px 5px hsl(50, 50%, 33%),
+                 6px 6px hsl(50, 50%, 32%),
+                 7px 7px hsl(50, 50%, 31%),
+                 8px 8px hsl(50, 50%, 30%),
+                 9px 9px hsl(50, 50%, 29%),
+                 10px 10px hsl(50, 50%, 28%),
+                 10px 10px 30px rgba(0,0,0,.7),
+  }
+
+  .weightclass {
+      font-size: 1.2vh;
+  }
+
+  .attr{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .eachFighter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
   }

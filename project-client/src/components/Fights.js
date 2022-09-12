@@ -2,10 +2,14 @@ import React from 'react'
 import FightsCard from './FightsCard'
 import './Fights.css'
 
-function Fights() {
+function Fights({fights, setClicked}) {
+
+    console.log(fights)
   return (
     <div>
-        <FightsCard />
+       {fights.map((el, i) => {
+           return <FightsCard setClicked={setClicked} key={i} fight={el} />
+       })}
     </div>
   )
 }
