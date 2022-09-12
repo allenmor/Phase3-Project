@@ -1,0 +1,61 @@
+.stadiumContainer {
+    margin: 5rem auto;
+    width: 95vw;
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .eachStadium {
+    display: flex;
+    flex-direction: column;
+    border: 2px black;
+  
+    margin: 0.1rem;
+  }
+  .card{
+      width: 38vh; 
+  }
+  .img-wrap{
+      width: 50%;
+      height: 15rem;
+  
+  }
+  .inline{
+      display: inline-block;
+  }
+  .stadiumImage {
+  object-fit: cover;
+  height: 100%;
+  margin: 0.5em;
+  }
+  .stadiumInfo {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    justify-content: space-around;
+  }
+  
+  img {
+      width: 100%;
+  }
+
+
+  /* Testing css */
+
+  .fighterBox {
+      border: 3px black;
+      display: flex;
+      width: 50%;
+      
+  }
+
+  .fighterPic {
+      width: 50%;
+      display: flex;
+  }
+  .fighterPics {
+      display: flex;
+  }
