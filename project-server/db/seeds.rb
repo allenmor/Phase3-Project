@@ -34,7 +34,8 @@ end
         red_fighter_id: RedFighter.all.sample.id,
         rounds: round_arr.sample,
         weight_class: all_weightclasses.sample,
-        state: all_states.sample
+        state: all_states.sample,
+        card: rand(50..300)
     )
 end
 

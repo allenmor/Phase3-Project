@@ -1,3 +1,22 @@
+.backgrounD{
+  background-image: url('https://tk7.tekken.com/assets/images/common/stone.jpg');
+  height: 82em;
+}
+
+#bg-title {
+  position: absolute;
+  color: gray;
+  font-size: 20.5em;
+  text-align: center;
+  margin: 0;
+  top: 21%;
+  height: auto;
+  z-index:  0;
+  opacity: 0.3;
+  letter-spacing: 30px;
+  width: 100%;
+  font-family: sans-serif;
+}
 
 .formBody {
     align-items: center;
@@ -15,6 +34,13 @@
     height: 40;
     padding: 20px;
     width: 320px;
+  }
+  .blue {
+    background-color:rgb(18,62,101);
+  }
+
+  .red {
+    background-color: rgb(201,8,8);
   }
   
   .title {
@@ -62,8 +88,8 @@
     border-radius: 4px;
   }
   
-  .cut {
-    background-color: #15172b;
+  .cutRed {
+    background-color: rgb(201,8,8);
     border-radius: 10px;
     height: 20px;
     left: 20px;
@@ -105,7 +131,7 @@
   }
   
   .input:focus ~ .placeholder {
-    color: #dc2f55;
+    color: #080708;
   }
   
   .submit {
@@ -150,6 +176,7 @@
     text-align: center;
     position: relative;
     transition: all .35s;
+    top: 20em;
   }
   
   .buttonA .span{
@@ -162,6 +189,7 @@
     color: black;
     position: relative;
     z-index: 2;
+    /* top: 50em; */
   }
   
   .buttonA:after{

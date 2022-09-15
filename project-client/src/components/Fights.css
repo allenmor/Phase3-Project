@@ -1,4 +1,4 @@
-
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/sports/spo-2/spo158.cur), auto !important;} /* End https://www.cursors-4u.com */
 
   /* Testing css */
 
@@ -22,10 +22,25 @@
   .fighterPic {
       width: 50%;
       display: flex;
+      transition: transform 0.2s, border 0.2s;
+  }
+  .redd:hover {
+    transform: scale(1.15);
+    border: 2px solid rgb(201,8,8);
+    cursor: pointer;
+    box-shadow: 1px 3px 40px rgb(201,8,8);
+  }
+  .bluee:hover {
+    transform: scale(1.15);
+    border: 2px solid rgb(18,62,101);
+    cursor: pointer;
+    box-shadow: 1px 3px 40px rgb(18,62,101);
   }
   .fighterPics {
       display: flex;
   }
+
+
 
   .inputFront[type=text], select {
     width: 100%;
@@ -49,8 +64,28 @@
       color: black;
   }
 
-  .submitBtn {
-      background-color: #ffd700;
+  .submitBtnBlue {
+      background-color: rgb(18,62,101);
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 5px;
+      position: sticky;
+      color: black;
+      width:20%;
+      margin-left:40%;
+      margin-right:40%;
+  }
+  .submitBtnBlue:hover {
+    background-color: #ffd700;
+    cursor: pointer;
+  }
+  .submitBtnRed:hover {
+    background-color: #ffd700;
+    cursor: pointer;
+  }
+  .submitBtnRed {
+      background-color: rgb(201,8,8);
       border: none;
       border-radius: 5px;
       padding: 5px;
@@ -62,6 +97,8 @@
       margin-right:40%;
   }
 
+
+  
 
 /* UFC LETTER  */
   
@@ -93,12 +130,13 @@
   }
 
   h2 {
+
     position: relative;
     z-index: 2;
     font-size: 1em;
     letter-spacing: 15px;
     text-transform: uppercase;
-    color: rgb(16, 16, 15);
+    color: rgb(255, 215, 0);
     text-shadow: 1px 1px hsl(50, 50%, 45%),
                  2px 2px hsl(50, 50%, 40%),
                  3px 3px hsl(50, 50%, 35%),
@@ -165,8 +203,11 @@
   }
 
   .eachFighter {
+    width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      background-color: rgba(18, 62, 101, 0.473);
+      background-image: url('https://tk7.tekken.com/assets/images/common/stone.jpg');
   }

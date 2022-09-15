@@ -80,13 +80,10 @@ function CreateFighter({setClicked}) {
   return (
     <>
     <div className="backgrounD">
-    {/* <h3 id="bg_title">UFC</h3> */}
+    <h3 id="bg-title">UFC</h3>
     <form  onSubmit={handleSubmit} className="formBody">
       {/* BLUE CORNER FIGHTER */}
-      <div className="form">
-            <Helmet>
-                <style>{'body { background-color: black; }'}</style>
-            </Helmet>
+      <div className="form blue">
         <div className="title">Blue Corner</div>
         <div className="subtitle">Enter Fighter Info</div>
         <div className="input-container ic1">
@@ -99,7 +96,7 @@ function CreateFighter({setClicked}) {
             name="name"
             value={blue.name}
           />
-          <div className="cut"></div>
+          <div className="cutBlue"></div>
           <label htmlFor="name" className="placeholder">
             Name
           </label>
@@ -189,7 +186,7 @@ function CreateFighter({setClicked}) {
       {/* BUTTON  */}
 
       {/* RED CORNER FIGHTER */}
-      <div className="form">
+      <div className="form red">
         <div className="title">Red Corner</div>
         <div className="subtitle">Enter Fighter Info</div>
         <div className="input-container ic1">
@@ -202,7 +199,7 @@ function CreateFighter({setClicked}) {
             placeholder=" "
             name="name"
           />
-          <div className="cut"></div>
+          <div className="cutRed"></div>
           <label htmlFor="name" className="placeholder">
             Name
           </label>

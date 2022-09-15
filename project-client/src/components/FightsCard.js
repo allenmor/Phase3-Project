@@ -80,12 +80,12 @@ function FightsCard({ fight, setClicked, ufcNum }) {
         setClicked(prev => !prev)
       })
   }
-
+console.log(fight)
   return (
     <div className="fightersCard">
       <div className="eachFighter">
         <img alt=""
-          className="fighterPic"
+          className="fighterPic bluee"
           src={fight.blue_fighter.image}
         />
         <h2>{fight.blue_fighter.name}</h2>
@@ -101,13 +101,13 @@ function FightsCard({ fight, setClicked, ufcNum }) {
               value={blue.name}
             />
             <input className="inputFront" value={blue.image} onChange={handleBlueChange} type="text" id="lname" name="image" placeholder="image" />
-            <input className="submitBtn" type="submit" value="Submit" />
+            <input className="submitBtnBlue" type="submit" value="Submit" />
           </form>
         </div>
       </div>
       <div className="details">
         <button onClick={handleClick} className="deleteBtn">DELETE</button>
-        <h1>UFC {getRandomInt(300)}</h1>
+        <h1>{`UFC ${fight.card}`}</h1>
         <div className="info">
           <div>
             <p className="writing">{fight.blue_fighter.age}</p>
@@ -133,7 +133,7 @@ function FightsCard({ fight, setClicked, ufcNum }) {
       </div>
       <div className="eachFighter">
         <img alt=""
-          className="fighterPic"
+          className="fighterPic redd"
           src={fight.red_fighter.image}
         />
         <h2>{fight.red_fighter.name}</h2>
@@ -149,7 +149,7 @@ function FightsCard({ fight, setClicked, ufcNum }) {
               placeholder="Your name.."
             />
             <input className="inputFront" onChange={handleRedChange} value={red.image} type="text" id="lname" name="image" placeholder="image" />
-            <input className="submitBtn" type="submit" value="Submit" />
+            <input className="submitBtnRed" type="submit" value="Submit" />
           </form>
         </div>
       </div>

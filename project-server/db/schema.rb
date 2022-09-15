@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2022_09_11_154606) do
     t.integer "rounds"
     t.string "weight_class"
     t.string "state"
+    t.integer "card"
   end
 
   create_table "red_fighters", force: :cascade do |t|
