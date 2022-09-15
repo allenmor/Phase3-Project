@@ -1,9 +1,10 @@
 import React from 'react'
 import FightsCard from './FightsCard'
+import { useState } from 'react'
 import './Fights.css'
 
 function Fights({fights, setClicked}) {
-
+  // const [ufcNum, setUfcNum] = useState(200)
     console.log(fights)
   return (
     <div>

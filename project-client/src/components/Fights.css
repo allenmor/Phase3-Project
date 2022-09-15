@@ -27,6 +27,41 @@
       display: flex;
   }
 
+  .inputFront[type=text], select {
+    width: 100%;
+    padding: 8px 15px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+  }
+
+  .deleteBtn {
+      background-color: #ffd700;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 5px;
+      position: relative; 
+      color: black;
+  }
+
+  .submitBtn {
+      background-color: #ffd700;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 5px;
+      position: sticky;
+      color: black;
+      width:20%;
+      margin-left:40%;
+      margin-right:40%;
+  }
+
 
 /* UFC LETTER  */
   
@@ -37,7 +72,7 @@
     font-size: 5em;
     letter-spacing: 15px;
     text-transform: uppercase;
-    color: yellow;
+    color: #ffd700;;
     text-shadow: 1px 1px hsl(50, 50%, 45%),
                  2px 2px hsl(50, 50%, 40%),
                  3px 3px hsl(50, 50%, 35%),
@@ -120,7 +155,7 @@
   }
 
   .weightclass {
-      font-size: 1.2vh;
+      font-size: 100%;
   }
 
   .attr{

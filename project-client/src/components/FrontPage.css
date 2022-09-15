@@ -111,7 +111,13 @@
     background: white;
     color: black;
   }
+
   .center .btns button:last-child{
+    color: rgb(255, 255, 255);
+    background: none;
+  }
+
+  .center .btns button:last-child:hover{
     background: white;
     color: black;
   }

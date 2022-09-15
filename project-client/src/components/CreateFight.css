@@ -1,3 +1,4 @@
+
 .formBody {
     align-items: center;
     /* background-color: #000; */
@@ -6,7 +7,6 @@
     height: 40vh;
     flex-wrap: wrap;
   }
-  
   .form {
     margin-top: 3vh;
     background-color: #15172b;
@@ -48,9 +48,8 @@
   }
   
   .input {
-    background-color: #303245;
-    border-radius: 12px;
-    border: 0;
+    background-color: black;
+    border: 1px solid #ccc;
     box-sizing: border-box;
     color: #eee;
     font-size: 18px;
@@ -58,6 +57,9 @@
     outline: 0;
     padding: 4px 20px 0;
     width: 100%;
+    margin: 4px 0;
+    display: inline-block;
+    border-radius: 4px;
   }
   
   .cut {
@@ -151,6 +153,13 @@
   }
   
   .buttonA .span{
+    background-color: #ffd700;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    position: relative; 
+    color: black;
     position: relative;
     z-index: 2;
   }
@@ -162,7 +171,7 @@
     left: 0;
     width: 0;
     height: 100%;
-    background: #ff003b;
+    background: #ffd700;
     transition: all .35s;
   }
   

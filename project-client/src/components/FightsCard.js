@@ -2,11 +2,12 @@ import React from "react";
 import { useEffect, useState } from "react";
 import "./Fights.css";
 
-function FightsCard({ fight, setClicked }) {
+function FightsCard({ fight, setClicked, ufcNum }) {
 
     let initialObj = {name: '', image: ''}
     const [blue, setBlue] = useState(initialObj)
     const [red, setRed] = useState(initialObj)
+
 
 
   function getRandomInt(max) {
@@ -83,23 +84,24 @@ function FightsCard({ fight, setClicked }) {
   return (
     <div className="fightersCard">
       <div className="eachFighter">
-        <img
+        <img alt=""
           className="fighterPic"
           src={fight.blue_fighter.image}
         />
         <h2>{fight.blue_fighter.name}</h2>
-        <div>
+        <div >
           <form onSubmit={handleSubmit} action="/action_page.php">
-            <input
+            <input 
             onChange={handleBlueChange}
+              className="inputFront"
               type="text"
               id="fname"
               name="name"
               placeholder="Your name.."
               value={blue.name}
             />
-            <input value={blue.image} onChange={handleBlueChange} type="text" id="lname" name="image" placeholder="image" />
-            <input type="submit" value="Submit" />
+            <input className="inputFront" value={blue.image} onChange={handleBlueChange} type="text" id="lname" name="image" placeholder="image" />
+            <input className="submitBtn" type="submit" value="Submit" />
           </form>
         </div>
       </div>
@@ -130,23 +132,24 @@ function FightsCard({ fight, setClicked }) {
         </div>
       </div>
       <div className="eachFighter">
-        <img
+        <img alt=""
           className="fighterPic"
           src={fight.red_fighter.image}
         />
         <h2>{fight.red_fighter.name}</h2>
         <div>
           <form onSubmit={handleRedSubmit} action="/action_page.php">
-            <input
+            <input 
             value={red.name}
+              className="inputFront"
               onChange={handleRedChange}
               type="text"
               id="fname"
               name="name"
               placeholder="Your name.."
             />
-            <input  onChange={handleRedChange} value={red.image} type="text" id="lname" name="image" placeholder="image" />
-            <input type="submit" value="Submit" />
+            <input className="inputFront" onChange={handleRedChange} value={red.image} type="text" id="lname" name="image" placeholder="image" />
+            <input className="submitBtn" type="submit" value="Submit" />
           </form>
         </div>
       </div>

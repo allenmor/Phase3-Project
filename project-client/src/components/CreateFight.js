@@ -1,5 +1,6 @@
 import React from "react";
 import "./CreateFight.css";
+import {Helmet} from 'react-helmet'
 import { useState, useEffect } from "react";
 
 function CreateFighter({setClicked}) {
@@ -77,9 +78,15 @@ function CreateFighter({setClicked}) {
   }
 
   return (
+    <>
+    <div className="backgrounD">
+    {/* <h3 id="bg_title">UFC</h3> */}
     <form  onSubmit={handleSubmit} className="formBody">
       {/* BLUE CORNER FIGHTER */}
       <div className="form">
+            <Helmet>
+                <style>{'body { background-color: black; }'}</style>
+            </Helmet>
         <div className="title">Blue Corner</div>
         <div className="subtitle">Enter Fighter Info</div>
         <div className="input-container ic1">
@@ -277,6 +284,8 @@ function CreateFighter({setClicked}) {
         </div>
       </div>
     </form>
+    </div>
+    </>
   );
 }
 
