@@ -6,7 +6,7 @@ all_weightclasses = ["Heavyweight", "Light Heavyweight", "Middleweight", "Welter
 all_states = ['Alabama','Alaska','American Samoa','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','District of Columbia','Federated States of Micronesia','Florida','Georgia','Guam','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine','Marshall Islands','Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota','Northern Mariana Islands','Ohio','Oklahoma','Oregon','Palau','Pennsylvania','Puerto Rico','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virgin Island','Virginia','Washington','West Virginia','Wisconsin','Wyoming']
 
 
-40.times do |t|
+10.times do |t|
     BlueFighter.create(
         name: Faker::Name.name,
         age: rand(18..37),
@@ -17,7 +17,7 @@ all_states = ['Alabama','Alaska','American Samoa','Arizona','Arkansas','Californ
     )
 end
 
-40.times do |t|
+10.times do |t|
     RedFighter.create(
         name: Faker::Name.name,
         age: rand(18..37),
@@ -28,13 +28,14 @@ end
     )
 end
 
-30.times do |t|
+10.times do |t|
     Fight.create(
         blue_fighter_id: BlueFighter.all.sample.id,
         red_fighter_id: RedFighter.all.sample.id,
         rounds: round_arr.sample,
         weight_class: all_weightclasses.sample,
-        state: all_states.sample
+        state: all_states.sample,
+        card: rand(50..300)
     )
 end
 

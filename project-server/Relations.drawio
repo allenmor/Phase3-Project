@@ -1,0 +1,89 @@
+<mxfile host="65bd71144e">
+    <diagram id="4rISBMg_oeimAKhB_vJ8" name="Page-1">
+        <mxGraphModel dx="1135" dy="769" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="14" value="blue_fighter" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#a20025;fontColor=#000000;strokeColor=#000000;swimlaneLine=1;rounded=0;sketch=0;shadow=0;fontFamily=Verdana;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="160" width="280" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Model: BlueFighter" style="text;strokeColor=#000000;fillColor=#a20025;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontFamily=Verdana;fontStyle=0" vertex="1" parent="14">
+                    <mxGeometry y="30" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="has_many :fights" style="text;strokeColor=#000000;fillColor=#a20025;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontFamily=Verdana;fontStyle=0" vertex="1" parent="14">
+                    <mxGeometry y="60" width="280" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="has_many :red_fighters, through: :fights" style="text;strokeColor=#000000;fillColor=#a20025;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontFamily=Verdana;fontStyle=0" vertex="1" parent="14">
+                    <mxGeometry y="100" width="280" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="red_fighter" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fillColor=#a20025;fontColor=#000000;strokeColor=#000000;fontFamily=Verdana;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="160" width="280" height="180" as="geometry">
+                        <mxRectangle x="520" y="160" width="100" height="30" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="Model: RedFighter" style="text;strokeColor=#000000;fillColor=#a20025;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontFamily=Verdana;fontStyle=0" vertex="1" parent="19">
+                    <mxGeometry y="30" width="280" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="has_many :fights" style="text;strokeColor=#000000;fillColor=#a20025;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontFamily=Verdana;fontStyle=0" vertex="1" parent="19">
+                    <mxGeometry y="60" width="280" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="has_many :blue_fighters, through: :fights" style="text;strokeColor=#000000;fillColor=#a20025;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontFamily=Verdana;fontStyle=0" vertex="1" parent="19">
+                    <mxGeometry y="100" width="280" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="fight" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;strokeColor=#000000;fillColor=#a20025;fontColor=#000000;fontFamily=Verdana;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="410" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Model: Fight" style="text;strokeColor=#000000;fillColor=#a20025;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontFamily=Verdana;fontStyle=0" vertex="1" parent="23">
+                    <mxGeometry y="30" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="belongs_to :blue_fighter" style="text;strokeColor=#000000;fillColor=#a20025;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontFamily=Verdana;fontStyle=0" vertex="1" parent="23">
+                    <mxGeometry y="60" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="belongs_to :red_fighter" style="text;strokeColor=#000000;fillColor=#a20025;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontColor=#000000;fontFamily=Verdana;fontStyle=0" vertex="1" parent="23">
+                    <mxGeometry y="90" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;entryX=0.499;entryY=1.081;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#a20025;strokeColor=#000000;fontColor=#000000;fontFamily=Verdana;fontStyle=0" edge="1" parent="1" target="22">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="540" y="480" as="sourcePoint"/>
+                        <mxPoint x="590" y="430" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;entryX=0.5;entryY=1.125;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#a20025;strokeColor=#000000;fontColor=#000000;fontFamily=Verdana;fontStyle=0" edge="1" parent="1" target="17">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="340" y="480" as="sourcePoint"/>
+                        <mxPoint x="185" y="410" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="340" y="480"/>
+                            <mxPoint x="220" y="480"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="" style="endArrow=none;html=1;fontFamily=Verdana;fontColor=#000000;strokeColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="24">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="430" y="400" as="sourcePoint"/>
+                        <mxPoint x="600" y="480" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="" style="endArrow=none;html=1;fontFamily=Verdana;fontColor=#000000;strokeColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="24">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="430" y="400" as="sourcePoint"/>
+                        <mxPoint x="280" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="" style="endArrow=none;html=1;fontFamily=Verdana;fontColor=#000000;strokeColor=#000000;entryX=-0.002;entryY=-0.02;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="26">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="280" y="480" as="sourcePoint"/>
+                        <mxPoint x="480" y="350" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="38" value="" style="endArrow=none;html=1;fontFamily=Verdana;fontColor=#000000;strokeColor=#000000;exitX=0.998;exitY=-0.001;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="26">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="430" y="400" as="sourcePoint"/>
+                        <mxPoint x="600" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

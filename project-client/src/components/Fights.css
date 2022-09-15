@@ -1,61 +1,213 @@
-.stadiumContainer {
-    margin: 5rem auto;
-    width: 95vw;
-    align-items: flex-end;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-  }
-  
-  .eachStadium {
-    display: flex;
-    flex-direction: column;
-    border: 2px black;
-  
-    margin: 0.1rem;
-  }
-  .card{
-      width: 38vh; 
-  }
-  .img-wrap{
-      width: 50%;
-      height: 15rem;
-  
-  }
-  .inline{
-      display: inline-block;
-  }
-  .stadiumImage {
-  object-fit: cover;
-  height: 100%;
-  margin: 0.5em;
-  }
-  .stadiumInfo {
-    display: flex;
-    align-items: center;
-    font-family: sans-serif;
-    justify-content: space-around;
-  }
-  
-  img {
-      width: 100%;
-  }
-
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/sports/spo-2/spo158.cur), auto !important;} /* End https://www.cursors-4u.com */
 
   /* Testing css */
 
-  .fighterBox {
-      border: 3px black;
-      display: flex;
-      width: 50%;
-      
+  .fightersCard {
+      border: 3px solid;
+      display: grid;
+      width: 95% ;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      margin: 1vh;
   }
 
+  .details {
+      background-color: black;
+      width: 100%;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
   .fighterPic {
       width: 50%;
       display: flex;
+      transition: transform 0.2s, border 0.2s;
+  }
+  .redd:hover {
+    transform: scale(1.15);
+    border: 2px solid rgb(201,8,8);
+    cursor: pointer;
+    box-shadow: 1px 3px 40px rgb(201,8,8);
+  }
+  .bluee:hover {
+    transform: scale(1.15);
+    border: 2px solid rgb(18,62,101);
+    cursor: pointer;
+    box-shadow: 1px 3px 40px rgb(18,62,101);
   }
   .fighterPics {
       display: flex;
+  }
+
+
+
+  .inputFront[type=text], select {
+    width: 100%;
+    padding: 8px 15px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+  }
+
+  .deleteBtn {
+      background-color: #ffd700;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 5px;
+      position: relative; 
+      color: black;
+  }
+
+  .submitBtnBlue {
+      background-color: rgb(18,62,101);
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 5px;
+      position: sticky;
+      color: black;
+      width:20%;
+      margin-left:40%;
+      margin-right:40%;
+  }
+  .submitBtnBlue:hover {
+    background-color: #ffd700;
+    cursor: pointer;
+  }
+  .submitBtnRed:hover {
+    background-color: #ffd700;
+    cursor: pointer;
+  }
+  .submitBtnRed {
+      background-color: rgb(201,8,8);
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 5px;
+      position: sticky;
+      color: black;
+      width:20%;
+      margin-left:40%;
+      margin-right:40%;
+  }
+
+
+  
+
+/* UFC LETTER  */
+  
+  h1 {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    z-index: 2;
+    font-size: 5em;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    color: #ffd700;;
+    text-shadow: 1px 1px hsl(50, 50%, 45%),
+                 2px 2px hsl(50, 50%, 40%),
+                 3px 3px hsl(50, 50%, 35%),
+                 4px 4px hsl(50, 50%, 34%),
+                 5px 5px hsl(50, 50%, 33%),
+                 6px 6px hsl(50, 50%, 32%),
+                 7px 7px hsl(50, 50%, 31%),
+                 8px 8px hsl(50, 50%, 30%),
+                 9px 9px hsl(50, 50%, 29%),
+                 10px 10px hsl(50, 50%, 28%),
+                 10px 10px 30px rgba(0,0,0,.7),
+  }
+  .info {
+    display: grid;
+    width: 95% ;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+  }
+
+  h2 {
+
+    position: relative;
+    z-index: 2;
+    font-size: 1em;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    color: rgb(255, 215, 0);
+    text-shadow: 1px 1px hsl(50, 50%, 45%),
+                 2px 2px hsl(50, 50%, 40%),
+                 3px 3px hsl(50, 50%, 35%),
+                 4px 4px hsl(50, 50%, 34%),
+                 5px 5px hsl(50, 50%, 33%),
+                 6px 6px hsl(50, 50%, 32%),
+                 7px 7px hsl(50, 50%, 31%),
+                 8px 8px hsl(50, 50%, 30%),
+                 9px 9px hsl(50, 50%, 29%),
+                 10px 10px hsl(50, 50%, 28%),
+                 10px 10px 30px rgba(0,0,0,.7),
+  }
+
+  p {
+    position: relative;
+    z-index: 2;
+    font-size: 2em;
+    letter-spacing: 15px;
+    margin-bottom: 1.5vh;
+    text-transform: uppercase;
+    color: rgb(255, 255, 254);
+    text-shadow: 1px 1px hsl(50, 50%, 45%),
+                 2px 2px hsl(50, 50%, 40%),
+                 3px 3px hsl(50, 50%, 35%),
+                 4px 4px hsl(50, 50%, 34%),
+                 5px 5px hsl(50, 50%, 33%),
+                 6px 6px hsl(50, 50%, 32%),
+                 7px 7px hsl(50, 50%, 31%),
+                 8px 8px hsl(50, 50%, 30%),
+                 9px 9px hsl(50, 50%, 29%),
+                 10px 10px hsl(50, 50%, 28%),
+                 10px 10px 30px rgba(0,0,0,.7),
+  }
+
+  .middle {
+    position: relative;
+    z-index: 2;
+    font-size: 2em;
+    letter-spacing: 15px;
+    margin-bottom: 1.5vh;
+    text-transform: uppercase;
+    color: rgb(102, 102, 98);
+    text-shadow: 1px 1px hsl(50, 50%, 45%),
+                 2px 2px hsl(50, 50%, 40%),
+                 3px 3px hsl(50, 50%, 35%),
+                 4px 4px hsl(50, 50%, 34%),
+                 5px 5px hsl(50, 50%, 33%),
+                 6px 6px hsl(50, 50%, 32%),
+                 7px 7px hsl(50, 50%, 31%),
+                 8px 8px hsl(50, 50%, 30%),
+                 9px 9px hsl(50, 50%, 29%),
+                 10px 10px hsl(50, 50%, 28%),
+                 10px 10px 30px rgba(0,0,0,.7),
+  }
+
+  .weightclass {
+      font-size: 100%;
+  }
+
+  .attr{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .eachFighter {
+    width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(18, 62, 101, 0.473);
+      background-image: url('https://tk7.tekken.com/assets/images/common/stone.jpg');
   }

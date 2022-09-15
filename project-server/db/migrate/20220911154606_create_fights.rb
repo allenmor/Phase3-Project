@@ -6,6 +6,7 @@ class CreateFights < ActiveRecord::Migration[6.1]
       t.integer :rounds
       t.string :weight_class
       t.string :state
+      t.integer :card
     end
   end
 end

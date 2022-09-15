@@ -9,6 +9,7 @@ import {useEffect, useState } from 'react'
 function App() {
 
   const [fights, setFights] = useState([])
+  const [clicked, setClicked] = useState(true)
 
   useEffect(() => {
     fetch('http://localhost:9292/fights')
@@ -16,17 +17,16 @@ function App() {
     .then(data => {
       setFights(data)
     })
-  },[])
+  },[clicked])
 
-  console.log(fights)
 
   return (
     <>
       <NavBar />
       <Routes>
         <Route path='/' element={<FrontPage />} />
-        <Route path='/fights' element={<Fights />} />
-        <Route path='/createfighter' element={<CreateFight />} />
+        <Route path='/fights' element={<Fights setClicked={setClicked} fights={fights}/>} />
+        <Route path='/createfighter' element={<CreateFight setClicked={setClicked}/>} />
       </Routes>
     </>
   );
