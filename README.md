@@ -7,7 +7,8 @@ open a new terminal and cd into project-client and run "npm start"
 
 Trello Work Flow:
 
-<img width="1127" alt="Screen Shot 2022-09-16 at 10 45 14 AM" src="https://user-images.githubusercontent.com/107948622/190666499-2ac483b4-99ae-47dc-813b-1be86e2e245c.png">
+<img width="1122" alt="Screen Shot 2022-09-16 at 11 06 34 AM" src="https://user-images.githubusercontent.com/107948622/190671061-fa22f259-7261-4eb5-a23a-630e0564eac8.png">
+
 
 React Components:
 
