@@ -35,5 +35,13 @@ Create a Fight Page:
 ![Screen Shot 2022-09-16 at 11 04 39 AM](https://user-images.githubusercontent.com/107948622/190670702-f1396511-c4fc-45cc-9863-540068e07eda.png)
 
 
+Three Stretch Goals:
+
+Initiate the fight and generate a winner between the two.
+
+Move winners to a "Winners Pool"
+
+Have a final fight where the champion will be updated to the landing page.
+
 
 
